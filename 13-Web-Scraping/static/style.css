@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:focus,
+input:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.mars_wrapper {
+    background-color: #EEEEEE;
+    padding: 75px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.mars_title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #323332;
+}
+
+.mars_title a {
+    background-color: #2E79BA;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.mars_content {
+    margin-top: 60px;
+}
+
+.mars_content h1 {
+    color: #323332;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.mars_content {
+    margin-top: 60px;
+}
+
+.mars_content span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #323332;
+}
+
+.mars_content p {
+    font-size: ;
+    color: #323332;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+.mars_images {
+    margin-top: 25px;
+}
+
+.mars_images img {
+    height: 600px;
+    width: 100%;
+}
+
+.mars_images h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+
+.mars_weather {
+    border: 2px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.mars_weather h3 {
+    font-size: 20px;
+    color: #323332;
+    margin-bottom: 7px;
+}
+
+.mars_weather p {
+    color: #3C4448;
+    margin-bottom: 0;
+}
+
+.mars_facts {
+    margin-top: 50px;
+}
+
+.mars_list li span {
+    float: right;
+    position: absolute;
+    left: 44%;
+}
+
+.mars_list {
+    border: 2px solid #3E3E3E;
+    position: relative;
+}
+
+.mars_list li {
+    border-bottom: 1px solid #8F8F8F;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mars_list:before {
+    position: absolute;
+    content: "";
+    left: 43%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #8F8F8F;
+}
+
+.mars_list li span {
+    font-weight: 400;
+}
+
+.mars_list h5 {
+    margin-bottom: 0;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.mars_hemisphere_title h1 {
+    text-align: center;
+    border-bottom: 2px solid #EEEEEE;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.mars_hemisphere {
+    padding: 100px 0;
+}
+
+.mars_hemisphere_images {
+    border: 2px solid #EEEEEE;
+    margin-bottom: 20px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.mars_hemisphere_images img {
+    height: 500px;
+    width: 100%;
+}
+
+.mars_hemisphere_images h1 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
