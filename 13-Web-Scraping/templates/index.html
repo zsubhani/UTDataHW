@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/font-awesome.min.css') }}">
+
+    <!--    Style CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/responsive.css') }}">
+    <title>Mission to Mars</title>
+</head>
+
+<body>
+  {% for mars_dat in mars_data %}
+    <div class="mars_area">
+        <div class="container-fluid">
+            <div class="mars_wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mars_title">
+                            <h1>Mission to Mars</h1>
+                            <a href="/scrape">Scrape New Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mars_content">
+                        <h1>Latest Mars News</h1>
+                        <span>{{ mars_dat.news_title }}</span>
+                        <p>{{ mars_dat.news_p }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="mars_images">
+                        <h1>Featured Mars Image</h1>
+                        <img src= {{ mars_dat.featured_image_url }} alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mars_weather">
+                        <h3>Current Weather on Mars</h3>
+                        <p>{{ mars_dat.mars_weather }}
+                    </div>
+                    <div class="mars_facts">
+                        <h3>Mars Facts</h3>
+                        <!-- <ul class="mars_list"> -->
+                            <!--<h5>value</h5>
+                            <li>description</li>
+                            <li>Equatonial Diameter: <span>6,792 km</span></li>
+                            <li>Polor Diameter: <span>6,752 km</span></li>
+                            <li>Mass: <span>6.42 x 10^23 kg (10.7% Earth)</span></li>
+                            <li>Moons: <span>2(photos & Deimos)</span></li>
+                            <li>Orbit Distance: <span>227,943,824 km (1.52 AU)</span></li>
+                            <li>Orbit Period: <span>687 days (1.9 years)</span></li>
+                            <li>Surface Temperature: <span>-153 to 20°C</span></li>
+                            <li>First Record: <span>2nd millennium BC</span></li>
+                            <li>Recorded By: <span>Egyptian astronome</span></li> -->
+                            {{ mars_dat.mars_facts_html_table | safe }}
+                      <!-- </ul> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mars_hemisphere">
+        <div class="container">
+            <div class="mars_hemisphere_title">
+                <h1>Mars Hemispheres</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mars_hemisphere_images">
+                        <img src= {{ mars_dat.hemisphere_image_urls[0]["img_url"] }} alt="">
+                        <h1>{{ mars_dat.hemisphere_image_urls[0]["title"] }}</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mars_hemisphere_images">
+                        <img src= {{ mars_dat.hemisphere_image_urls[1]["img_url"] }} alt="">
+                        <h1>{{ mars_dat.hemisphere_image_urls[1]["title"] }}</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mars_hemisphere_images">
+                        <img src= {{ mars_dat.hemisphere_image_urls[2]["img_url"] }} alt="">
+                        <h1>{{ mars_dat.hemisphere_image_urls[2]["title"] }}</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mars_hemisphere_images">
+                        <img src= {{ mars_dat.hemisphere_image_urls[3]["img_url"] }} alt="">
+                        <h1>{{ mars_dat.hemisphere_image_urls[3]["title"] }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endfor %}
+
+
+
+
+
+
+    <!-- jQuery first, then Popper js, then Bootstrap JS -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
