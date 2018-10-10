@@ -1,0 +1,150 @@
+/*wide screen*/
+
+@media only screen and (min-width: 1200px) {
+    .slicknav_menu {
+        display: none;
+    }
+    .mars_list li {
+        font-size: 15px;
+    }
+}
+
+/*medium screen*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .slicknav_menu {
+        display: none;
+    }
+    .mars_list li {
+        font-size: 12px;
+    }
+    .mars_list h5 {
+        padding-left: 20px;
+    }
+}
+
+
+/*Tablet screen*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .slicknav_menu {
+        display: none;
+    }
+    .mars_list::before {
+        left: 46%;
+    }
+    .mars_list li {
+        font-size: 10px;
+    }
+    .mars_list li span {
+        font-size: 8px;
+        left: 48%;
+    }
+    .mars_list h5 {
+        padding-left: 40px;
+        font-size: 16px;
+    }
+
+}
+
+
+/*Mobile screen*/
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .slicknav_menu {
+        display: block;
+    }
+    .mars_wrapper {
+        padding: 58px 0;
+    }
+    .mars_title h1 {
+        font-size: 30px;
+    }
+    .mars_content h1 {
+        font-size: 30px;
+    }
+    .mars_content span {
+        font-size: 15px;
+    }
+    .mars_content p {
+        line-height: 20px;
+    }
+    .mars_images h1 {
+        font-size: 25px;
+    }
+    .mars_images img {
+        height: 400px;
+    }
+    .mars_weather {
+        margin-top: 50px;
+    }
+    .mars_list li {
+        font-size: 12px;
+    }
+    .mars_list li span {
+        font-size: 11px;
+    }
+    .mars_list h5 {
+        padding-left: 20px;
+    }
+    .mars_hemisphere {
+        padding: 70px 0;
+    }
+    .mars_hemisphere_images img {
+        height: 400px;
+    }
+
+
+}
+
+
+/*Wide Mobile screen*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slicknav_menu {
+        display: block;
+    }
+    .mars_wrapper {
+        padding: 58px 0;
+    }
+    .mars_title h1 {
+        font-size: 30px;
+    }
+    .mars_content h1 {
+        font-size: 30px;
+    }
+    .mars_content span {
+        font-size: 15px;
+    }
+    .mars_content p {
+        line-height: 20px;
+    }
+    .mars_images h1 {
+        font-size: 25px;
+    }
+    .mars_images img {
+        height: 400px;
+    }
+    .mars_weather {
+        margin-top: 50px;
+    }
+    .mars_list li {
+        font-size: 12px;
+    }
+    .mars_list li span {
+        font-size: 11px;
+    }
+    .mars_list h5 {
+        padding-left: 20px;
+    }
+    .mars_hemisphere {
+        padding: 70px 0;
+    }
+    .mars_hemisphere_images img {
+        height: 400px;
+    }
+
+
+
+}
